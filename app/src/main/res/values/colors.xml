@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="btn_bg">#ff6600</color>
+    <color name="btn_bg_pre">#c8580d</color>
+    <color name="edittext_bg">#d7d7d7</color>
+    <color name="line">#c9c9c9</color>
+    <color name="textcolor">#c3c3c3</color>
+    <color name="deep_gray">#666666</color>
+    <color name="textredcolor">#f31216</color>
+    <color name="activitybg">#f3f3f3</color>
+
+    <drawable name="clr_normal">@color/btn_bg</drawable>
+    <drawable name="clr_pressed">@color/btn_bg_pre</drawable>
+</resources>
