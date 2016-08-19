@@ -1,5 +1,6 @@
 package com.javen.rxmvp.view;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -26,6 +27,7 @@ import java.util.Map;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import cn.pedant.SweetAlert.SweetAlertDialog;
 
 public class MainActivity extends AutoLayoutActivity {
 
@@ -36,6 +38,7 @@ public class MainActivity extends AutoLayoutActivity {
     @BindView(R.id.id_dream_result)
     ListView listView;
 
+    private Context mContext;
     MyAdapter myAdapter;
 
     List<JuHeDream> mDatas;
@@ -45,6 +48,7 @@ public class MainActivity extends AutoLayoutActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mContext = this;
         ButterKnife.bind(this);
         initView();
     }
@@ -57,8 +61,18 @@ public class MainActivity extends AutoLayoutActivity {
         listView.setAdapter(myAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(MainActivity.this, "点击了:" + l, Toast.LENGTH_SHORT).show();
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                Toast.makeText(MainActivity.this, "点击了:" + position, Toast.LENGTH_SHORT).show();
+                List<String> stringList = mDatas.get(position).getList();
+
+                StringBuffer sbf= new StringBuffer();
+                for (String s : stringList) {
+                    sbf.append(s).append("\n\n\n");
+                }
+                new SweetAlertDialog(mContext)
+                        .setTitleText(mDatas.get(position).getTitle())
+                        .setContentText(sbf.toString())
+                        .show();
             }
         });
     }

@@ -52,6 +52,7 @@ public class ProgressDialogHandler extends Handler {
     private void dismissProgressDialog(){
         if (pd != null) {
             pd.dismiss();
+            mProgressCancelListener.onCancelProgress();
             pd = null;
         }
     }
