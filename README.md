@@ -2,7 +2,7 @@
 
 **本项目目标:教你如何使用`Retrofit2+Rxjava+MVP`一步一步实现聚合周公解梦** 
 
-![image](https://github.com/aven205/RxMVP/raw/master/screenshots/MVP3.jpeg)
+![image](https://github.com/Javen205/RxMVP/raw/master/screenshots/MVP3.jpeg)
 
 
 # 以下是详细的实现步骤
