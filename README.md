@@ -6,7 +6,7 @@ retrofit2+rxjava 实现带进度条请求
 
 **Tag02**
 
-详细介绍  [博客地址](http://javen205.oschina.io/tags/Android-MVP)
+详细介绍  [博客地址](https://javen205.github.io/tags/Android-MVP)
 
 Android MVP 构架初试
 
