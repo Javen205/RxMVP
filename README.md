@@ -33,4 +33,4 @@ MVP与MVC最大的不同，其实是Activity职责的变化，由原来的C (控
 
 Android MVP 构架封装
 
-详细介绍  [博客地址](http://javen205.oschina.io/tags/Android-MVP)
+详细介绍  [博客地址](https://javen205.github.io/tags/Android-MVP)
