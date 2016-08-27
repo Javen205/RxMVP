@@ -1,4 +1,10 @@
 # RxMVP
+
+**本项目目标:教你如何使用`Retrofit2+Rxjava+MVP`一步一步实现聚合解梦接口查询** 
+
+
+# 以下是详细的实现步骤
+
 **Tag01**
 retrofit2+rxjava 实现带进度条请求
 
