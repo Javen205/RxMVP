@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         tools:replace="android:icon,android:theme"
         android:theme="@style/AppTheme">
-        <activity android:name=".MVPActivity">
+        <activity android:name=".NewMvpActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

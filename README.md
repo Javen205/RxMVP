@@ -2,7 +2,12 @@
 **Tag01**
 retrofit2+rxjava 实现带进度条请求
 
+参考干货网 [RxJava 与 Retrofit 结合的最佳实践](http://gank.io/post/56e80c2c677659311bed9841)
+
 **Tag02**
+
+详细介绍  [博客地址](http://javen205.oschina.io/tags/Android-MVP)
+
 Android MVP 构架初试
 
 目前讨论```MVP```  ```MVVM``` 的架构也来越多，这种构架也很适合Android。研究MVP记录如下
@@ -23,3 +28,9 @@ Android MVP 构架初试
 - P : 新成员Prensenter 用来代理 C(control) 控制层
 
 MVP与MVC最大的不同，其实是Activity职责的变化，由原来的C (控制层) 变成了 V(视图层)，不再管控制层的问题，只管如何去显示。控制层的角色就由我们的新人 Presenter来担当，这种架构就解决了Activity过度耦合控制层和视图层的问题。
+
+**Tag03**
+
+Android MVP 构架封装
+
+详细介绍  [博客地址](http://javen205.oschina.io/tags/Android-MVP)
